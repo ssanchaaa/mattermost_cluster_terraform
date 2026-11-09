@@ -1,0 +1,22 @@
+# Ignore local secrets and variable values
+*.tfvars
+*.tfvars.json
+
+# Ignore temporary local override files
+*.override.tf
+*.override.tf.json
+
+# Ignore local CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore Terraform local cache and downloaded providers
+.terraform/
+
+# Ignore crash logs
+crash.log
+crash.*.log
+
+# Ignore TF state files (if you are not using remote state storage)
+*.tfstate
+*.tfstate.backup

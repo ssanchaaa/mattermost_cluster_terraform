@@ -32,6 +32,8 @@ module "mattermost_app1" {
 
   ssh_user = var.mm_app_01_ssh_user
   ssh_keys = var.mm_app_01_ssh_keys
+
+  ip_address = var.mm_app_01_ip_address
 }
 
 module "mattermost_db1" {
@@ -48,6 +50,8 @@ module "mattermost_db1" {
 
   ssh_user = var.mm_db_01_ssh_user
   ssh_keys = var.mm_db_01_ssh_keys
+
+  ip_address = var.mm_db_01_ip_address
 }
 
 module "mattermost_db2" {
@@ -64,6 +68,8 @@ module "mattermost_db2" {
 
   ssh_user = var.mm_db_02_ssh_user
   ssh_keys = var.mm_db_02_ssh_keys
+
+  ip_address = var.mm_db_02_ip_address
 }
 
 module "mattermost_nginx1" {
@@ -80,4 +86,6 @@ module "mattermost_nginx1" {
 
   ssh_user = var.mm_nginx_01_ssh_user
   ssh_keys = var.mm_nginx_01_ssh_keys
+
+  ip_address = var.mm_nginx_01_ip_address
 }

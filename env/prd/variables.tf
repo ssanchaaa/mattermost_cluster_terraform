@@ -231,3 +231,23 @@ variable "mm_db_02_ssh_keys" {
   type        = list(string)
   description = "List of authorized public SSH keys for db2"
 }
+
+variable "mm_app_01_ip_address" {
+  type        = string
+  description = "Ip address for vm app1"
+}
+
+variable "mm_db_01_ip_address" {
+  type        = string
+  description = "Ip address for vm db1"
+}
+
+variable "mm_db_02_ip_address" {
+  type        = string
+  description = "Ip address for vm db2"
+}
+
+variable "mm_nginx_01_ip_address" {
+  type        = string
+  description = "Ip address for vm nginx1"
+}
